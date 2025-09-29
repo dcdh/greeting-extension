@@ -8,5 +8,9 @@ import io.smallrye.config.ConfigMapping;
 @ConfigRoot(phase = ConfigPhase.RUN_TIME)
 public interface GreetingConfig {
 
+    /**
+     * hello
+     * @return
+     */
     String hello();
 }
