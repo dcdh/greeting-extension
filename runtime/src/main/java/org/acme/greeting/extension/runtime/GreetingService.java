@@ -6,7 +6,10 @@ import jakarta.inject.Inject;
 @ApplicationScoped
 public class GreetingService {
 
+    @Inject
+    GreetingConfig greetingConfig;
+
     public String sayHello() {
-        return "Hello World!";
+        return greetingConfig.hello();
     }
 }
